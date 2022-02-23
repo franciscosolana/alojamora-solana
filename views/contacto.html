@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shorcut icon" href="../assets/img/logo.jpeg">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <title>ALOJAMORA</title>
+</head>
+<body>
+      <header class="barra">
+        <!-- logo+nav -->
+        <div class="barraLogo">
+          <a href="../index.html"><img src="../assets/img/logo.jpeg" alt="logo" class="logo"></a>
+        </div>
+        <div class="barraNav">
+        <nav>
+           <ul class="navUl"> 
+             <li class="navItem"><a class="navLink" href="../index.html">Inicio</a></li>
+             <li class="navItem"><a class="navLink" href="joyas.html">Joyas</a></li>
+             <li class="navItem"><a class="navLink"  href="customized.html">Customized</a></li>
+             <li class="navItem"><a class="navLink" href="nosotros.html">Nosotros</a></li>
+             <li class="navItem"><a class="navLink" href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- fin de la nav -->
+      </header>
+      <main>
+        <!-- titulo de la seccion -->
+        <h1>Contacto</h1>
+          <!-- inicio del formulario -->
+          <form action="#">
+            <label for="nombre">Nombre:</label> 
+            <input type="text" name="nombre" id="nombre" size="21">
+            <br>
+            <label for="email">Mail:</label>
+            <input type="email" name="email" size="20" placeholder="pedro@gmail.com">
+            <br>
+          <select name="menu" id="menu">
+            <option value="0">Escoja su anillo</option>
+            <option value="1">Anillo Uno</option>
+            <option value="2">Anillo Dos</option>   
+            <option value="3">Anillo Tres</option>
+          </select>
+          <br>
+            <label for="comentarios"> Comentarios:</label><br>
+            <textarea name="mensaje" id="mensaje" cols="25" rows="4" placeholder=" Deje aqui sus comentarios"></textarea>
+          <div>Acepto términos y condiciones
+           <input type="checkbox" name="aceptar" value="1">
+          </div>
+          <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+          </div>
+          </form>
+          <!-- fin del formulario -->
+      </main>
+          <!-- incio del footer -->
+      <footer>    
+           <p class="fooLeft"><a href="https://www.instagram.com/joyaselaboradasamano/" target="_blank"><img src="../assets/img/instagram.png" alt="logo instagram" class="igLogo"></a></p>
+           <p class="fooMid"><a href="mailto:info@dominio.com">Consultas</a></p>
+           <p class="fooRight"><a href="nosotros.html#preguntas">Preguntas Frecuentes</a></p>   
+      </footer>
+          <!-- fin del footer -->
+</body>
+</html>

@@ -36,10 +36,10 @@ main h1 {
    text-align: center;
 }
 .mainFoto {
-   width: 43%;
-   height: auto;
-   display: block;
-   padding-left: 25%;
+   width: 1%;
+   height: 1;
+   background-color: grey;
+
 }
 #descripcion {
 font-weight: bold;
@@ -77,7 +77,7 @@ font-size: 18px;
    grid-area: 1 / 2 / 2 / 3;
 }
 .joyaTres { 
-   width: 50%;
+   width: 52%;
    height: auto;
    padding-top: 10%;
    padding-left: 5%;

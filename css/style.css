@@ -62,6 +62,17 @@ font-size: 18px;
    font-size: 20px;
    font-weight: bold;
 }
+.h1Joya{
+   font-weight: bold;
+   border: 1px solid black;
+}
+.headJoya{
+    background-color: red; 
+   border: 1px solid blue; 
+   margin-top: 10%;
+   font-size: 30px;
+   color: white;
+}
 .joyaUno{
    width: 50%;
    height: auto;
@@ -77,7 +88,7 @@ font-size: 18px;
    grid-area: 1 / 2 / 2 / 3;
 }
 .joyaTres { 
-   width: 52%;
+   width: 50%;
    height: auto;
    padding-top: 10%;
    padding-left: 5%;
@@ -129,39 +140,20 @@ font-size: 18px;
 #preguntas {
    text-align: center;
    margin: 10px;
-   border: 1px solid red;
+   border-bottom: 1px solid red;
 }
-footer {
-   display: grid;
-   grid-template-areas:
-   "fooleft consultas preguntasFrecuentes";
-   grid-template-columns: 33% 33% 33%;
-   border-top: solid black 1px;
-   text-align: center;
-   padding: 20px;
-   position: relative;
-   top: 150px;
+.divPreguntas{
+   padding-top: 1%;
 }
-footer p{
-   display: inline;
-   padding: 25%;
+.bigicon {
+   font-size: 35px;
+   color: #36A0FF;
 }
-footer p:hover{
-   height: 200px;
+footer h6 {
+   font-weight: bold;
+   font-size: 20px;
 }
-.igLogo {
-   width: 50px;
-   height: auto;
-}
-.fooLeft{
-   grid-area: fooleft;
-}
-.fooMid{
-   grid-area: consultas;
-}
-.fooRight{
-  grid-area: preguntasFrecuentes;
-}
+
 /* MEDIA QUERIE */
 
 @media only screen and (max-width:768px)  {
@@ -190,7 +182,9 @@ footer p:hover{
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-around
-      
+      justify-content: space-around  
+   }
+   footer{
+      border: 1px solid black;
    }
 }

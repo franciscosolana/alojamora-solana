@@ -1,0 +1,43 @@
+
+    .logo {
+        width: 150px;
+        height: auto;
+      }
+      .barra {
+      display: flex;
+        border-bottom: solid black 1px;
+      }
+      .barraNav {
+        margin-left: auto;
+        align-self: center;
+      }
+      .navItem {
+        display: inline-block;
+      }
+      .navLink {
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        font-size: 23px;
+      }
+      
+      @media only screen and (max-width: 768px) {
+        .barra {
+          flex-direction: column;
+          align-items: center;
+        }
+        .barraNav {
+          margin: auto;
+        }
+        .navUl {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+        }
+        .navItem {
+          padding: 5px;
+        }
+        .navLink {
+          font-size: 15px;
+        }
+    }

@@ -1,0 +1,21 @@
+.mainH1 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid black;
+  }
+  .mainH2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .divPreguntas {
+    padding-top: 1%;
+  } 
+  
+  @media only screen and (max-width: 768px){
+    .mainH1 {
+        font-size: 25px;
+      }
+  }
+  

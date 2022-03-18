@@ -1,8 +1,8 @@
 .mainH1 {
-    font-size: 50px;
-    text-align: center;
-    font-weight: bold;
-    border: 1px solid black;
+      font-size: map-get($estilos,fuente );
+      text-align: map-get($estilos,centro );
+      font-weight: map-get($estilos,negrita );
+      border: map-get($estilos,borde);
   }
   .mainH2 {
     font-size: 30px;

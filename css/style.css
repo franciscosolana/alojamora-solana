@@ -19,21 +19,6 @@
   text-decoration: none;
   font-size: 23px; }
 
-@media only screen and (max-width: 768px) {
-  .barra {
-    flex-direction: column;
-    align-items: center; }
-  .barraNav {
-    margin: auto; }
-  .navUl {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; }
-  .navItem {
-    padding: 5px; }
-  .navLink {
-    font-size: 15px; } }
-
 .mainH1 {
   font-size: 50px;
   text-align: center;
@@ -45,12 +30,33 @@
   text-align: center;
   font-weight: bold; }
 
+.mainH3 {
+  font-size: 50px;
+  text-align: center; }
+
+.mainH5 {
+  font-size: 25px; }
+
+.carrouselHeight {
+  padding-top: 1%;
+  height: calc(100vh - 80px);
+  object-fit: cover; }
+
+.secIndex {
+  font-size: 20px; }
+
+.imgMedidas {
+  width: 45%;
+  margin-left: 25%; }
+
+.boton {
+  font-size: 30px;
+  border: 1px solid white;
+  background-color: #007bff;
+  color: white; }
+
 .divPreguntas {
   padding-top: 1%; }
-
-@media only screen and (max-width: 768px) {
-  .mainH1 {
-    font-size: 25px; } }
 
 .imgJoya {
   display: grid;
@@ -62,7 +68,8 @@
 .contenedorImg {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  overflow-x: hidden; }
 
 .descpImg {
   font-size: 20px;
@@ -74,83 +81,132 @@
   font-size: 30px;
   color: white; }
 
-.aCusto {
-  display: flex;
-  margin-top: 5%;
-  padding-right: 1%;
-  font-size: 30px;
-  color: white;
-  background-color: black; }
-
-@media only screen and (max-width: 768px) {
-  .imgJoya {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around; } }
-
 .joyaUno {
   width: 50%;
   height: auto;
   padding-top: 10%;
-  padding-left: 5%;
+  padding-left: 3%;
   grid-area: 0.25; }
 
 .joyaDos {
   width: 50%;
   height: auto;
   padding-top: 10%;
-  padding-left: 5%;
+  padding-left: 3%;
   grid-area: 0.08333; }
 
 .joyaTres {
   width: 50%;
   height: auto;
   padding-top: 10%;
-  padding-left: 5%;
+  padding-left: 3%;
   grid-area: 0.04167; }
 
 .joyaCuatro {
   width: 50%;
   height: auto;
   padding-top: 10%;
-  padding-left: 5%;
+  padding-left: 3%;
   grid-area: 0.33333; }
 
 .joyaCinco {
   width: 50%;
   height: auto;
   padding-top: 10%;
-  padding-left: 5%;
+  padding-left: 3%;
   grid-area: 0.11111; }
 
 .joyaSeis {
   width: 50%;
   height: auto;
   padding-top: 10%;
-  padding-left: 5%;
+  padding-left: 3%;
   grid-area: 0.05556; }
 
 .joyaSiete {
   width: 50%;
   height: auto;
   padding-top: 10%;
-  padding-left: 5%;
+  padding-left: 3%;
   grid-area: 0.375; }
 
 .joyaOcho {
   width: 50%;
   height: auto;
   padding-top: 10%;
-  padding-left: 5%;
+  padding-left: 3%;
   grid-area: 0.125; }
 
 .joyaNueve {
   width: 50%;
   height: auto;
   padding-top: 10%;
-  padding-left: 5%;
+  padding-left: 3%;
   grid-area: 0.0625; }
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-template-areas: "section-a p-a" "p-b section-b" "section-c p-c" "p-d section-d"; }
+
+.section-a, .section-b, .section-c, .section-d, .p-a, .p-b, .p-c, .p-d {
+  background-color: lightgrey;
+  border: 1px solid black; }
+
+.section-a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  grid-area: section-a; }
+
+.imgA {
+  width: 100%; }
+
+.p-a {
+  grid-area: p-a; }
+
+.section-b {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  grid-area: section-b; }
+
+.p-b {
+  grid-area: p-b; }
+
+.section-c {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  grid-area: section-c; }
+
+.p-c {
+  grid-area: p-c; }
+
+.section-d {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  grid-area: section-d; }
+
+.p-d {
+  grid-area: p-d; }
+
+div li p {
+  padding-top: 3%;
+  font-size: 30px;
+  text-align: center; }
+
+.boton1 {
+  font-size: 30px;
+  border: 1px solid white;
+  background-color: #007bff;
+  color: white; }
 
 button {
   position: relative;
@@ -221,7 +277,7 @@ button .liquid-reset::before {
   width: 200%;
   height: 200%;
   position: absolute;
-  top: 0;
+  top: 1%;
   left: 10%;
   transform: translate(-50%, -75%);
   background: #fff; }
@@ -253,5 +309,72 @@ footer {
     font-size: 20px; }
 
 @media only screen and (max-width: 768px) {
+  .barra {
+    flex-direction: column;
+    align-items: center; }
+  .barraNav {
+    margin: auto; }
+  .navUl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+  .navItem {
+    padding: 5px; }
+  .navLink {
+    font-size: 15px; }
+  .mainH1 {
+    font-size: 25px; }
+  .imgJoya {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 310px 250px 310px 250px 310px 250px 310px 250px;
+    grid-template-areas: "section-a"  "p-a" "section-b" "p-b" "section-c"  "p-c" "section-d" "p-d";
+    width: 100%;
+    height: 100%; }
+  .p-a, .p-b, .p-c, .p-d {
+    font-size: 10px; }
+  .imgA {
+    width: 100%;
+    height: 99%; }
+  div li p {
+    padding-top: 0%;
+    font-size: 10px;
+    text-align: justify; }
+  .boton1 {
+    width: 50%;
+    font-size: 17px;
+    background-color: #007bff;
+    color: white;
+    margin-left: 20%; }
+  .boton2 {
+    width: 100%;
+    font-size: 17px;
+    background-color: #007bff;
+    color: white;
+    border: 1px solid black; }
+  .mainH3 {
+    font-size: 20px; }
+  .mainH5 {
+    font-size: 10px; }
+  .secIndex {
+    font-size: 15px; }
+  .imgDiametro {
+    width: 30%; }
+  .imgMedidas {
+    width: 75%;
+    margin-left: 10%; }
+  .boton {
+    width: 50%;
+    font-size: 17px;
+    background-color: #007bff;
+    color: white;
+    margin-left: 25%; }
   footer {
-    border: 1px solid black; } }
+    border: 1px solid black; }
+  .carrouselHeight {
+    height: 300px; } }

@@ -1,0 +1,82 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px; 
+    grid-template-areas: "section-a p-a"
+    "p-b section-b"
+    "section-c p-c"
+    "p-d section-d";
+}    
+.section-a,.section-b, .section-c, .section-d, .p-a, .p-b, .p-c, .p-d{
+      background-color: lightgrey;
+      border: 1px solid black;
+}
+    
+.section-a{
+      display: flex;
+      flex-direction: row;
+    //   justify-content: flex-end;
+      align-items: center;
+      grid-area: section-a;
+}
+    
+.imgA{
+      width: 100%;
+}
+    
+.p-a{
+      grid-area: p-a;     
+}
+    
+.section-b{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      grid-area: section-b;
+}
+    
+.p-b{
+      grid-area: p-b;
+}
+    
+.section-c{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      grid-area: section-c;
+}
+    
+.p-c{
+      grid-area: p-c;
+}
+  
+    
+.section-d{ 
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      grid-area: section-d;
+}
+    
+.p-d{
+      grid-area: p-d;
+}
+    
+    
+div li p {
+      padding-top: 3%;
+      font-size: 30px;
+      text-align: center;
+}
+.boton1{
+        font-size: 30px;
+        border: 1px solid white;
+        background-color: #007bff;
+        color: white; }
+      
+
+

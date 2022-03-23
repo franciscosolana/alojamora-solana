@@ -1,21 +1,48 @@
 .mainH1 {
-      font-size: map-get($estilos,fuente );
-      text-align: map-get($estilos,centro );
-      font-weight: map-get($estilos,negrita );
-      border: map-get($estilos,borde);
-  }
-  .mainH2 {
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
-  }
-  .divPreguntas {
-    padding-top: 1%;
-  } 
-  
-  @media only screen and (max-width: 768px){
-    .mainH1 {
-        font-size: 25px;
-      }
-  }
-  
+      font-size: 50px;
+      text-align: center;
+      font-weight: bold;
+      border: 1px solid black;
+}
+ 
+.mainH2 {
+      font-size: 30px;
+      text-align: center;
+      font-weight: bold;
+}
+
+.mainH3{
+  font-size: 50px;
+  text-align: center;
+}
+ 
+.mainH5{
+  font-size: 25px;
+}
+
+.carrouselHeight{
+  padding-top: 1%;
+    height: calc(100vh - 80px);
+    object-fit: cover;
+}
+
+.secIndex{
+  font-size: 20px;
+}
+
+.imgMedidas{
+  width: 45%;
+  margin-left: 25%;
+}
+
+.boton{
+  font-size: 30px;
+  border: 1px solid white;
+  background-color: #007bff;
+  color: white;
+}
+
+
+.divPreguntas {
+      padding-top: 1%;
+} 

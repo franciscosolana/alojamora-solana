@@ -1,13 +1,8 @@
 footer {
-    background-color: $colorPrimario ;
+    background-color: lightgrey ;
     border-top: 2px solid black;
 h6 {
    font-weight: bold;
    font-size: 20px;
 } 
-}
-@media only screen and (max-width: 768px){
-    footer {
-        border: 1px solid black;
-      }
 }

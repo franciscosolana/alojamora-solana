@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Joyas elaboradas a mano, plata,oro,artesanias">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shorcut icon" href="../assets/img/logo.jpeg">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,50 +43,51 @@
         </nav>
       </div>
     </header>
-    <main style="background-color: lightgrey">
+    <main style="overflow-x: hidden; background-color: lightgrey;">
       <h1 class="mainH1">JOYAS</h1>
+      <a href="customized.html" class="btn btn-primary btn-lg boton" role="button">Elegi tu modelo personalizado</a>
       <div class="imgJoya">
-        <div class="contenedorImg animacionZoom">
-          <p class="headJoya">Joya 1</p>
+        <div class="contenedorImg" data-aos="fade-down-right" data-aos-delay="50" data-aos-duration="1000">
+          <p class="headJoya">Joya 1</p> 
           <img src="../assets/img/joya1.jpg" alt="joya1" class="joyaUno"/>
           <p class="descpImg">$1500</p>
         </div>
-        <div class="contenedorImg animacionZoom">
+        <div class="contenedorImg" data-aos="flip-up" data-aos-delay="50" data-aos-duration="1000">
           <p class="headJoya">Joya 2</p>
           <img src="../assets/img/joya2.jpg" alt="joya2" class="joyaDos"/>
           <p class="descpImg">$2300</p>
         </div>
-        <div class="contenedorImg animacionZoom">
+        <div class="contenedorImg" data-aos="fade-down-left" data-aos-delay="50" data-aos-duration="1000">
           <p class="headJoya">Joya 3</p>
           <img src="../assets/img/joya3.jpg" alt="joya3" class="joyaTres"/>
           <p class="descpImg">$1700</p>
         </div>
-        <div class="contenedorImg animacionZoom">
+        <div class="contenedorImg" data-aos="fade-down-right" data-aos-delay="50" data-aos-duration="1000" >
           <p class="headJoya">Joya 4</p>
           <img src="../assets/img/joya4.jpg" alt="joya4" class="joyaCuatro"/>
           <p class="descpImg">$1500</p>
         </div>
-        <div class="contenedorImg animacionZoom">
+        <div class="contenedorImg" data-aos="flip-up" data-aos-delay="50" data-aos-duration="1000" >
           <p class="headJoya">Joya 5</p>
           <img src="../assets/img/joya5.jpg" alt="joya5" class="joyaCinco"/>
           <p class="descpImg">$5000</p>
         </div>
-        <div class="contenedorImg animacionZoom">
+        <div class="contenedorImg"  data-aos="fade-down-left" data-aos-delay="50" data-aos-duration="1000" >
           <p class="headJoya">Joya 6</p>
           <img src="../assets/img/joya6.jpg" alt="joya6" class="joyaSeis"/>
           <p class="descpImg">$890</p>
         </div>
-        <div class="contenedorImg animacionZoom">
+        <div class="contenedorImg"  data-aos="fade-down-right" data-aos-delay="50" data-aos-duration="1000">
           <p class="headJoya">Joya 7</p>
           <img src="../assets/img/joya7.jpg" alt="joya7" class="joyaSiete"/>
           <p class="descpImg">$2000</p>
         </div>
-        <div class="contenedorImg animacionZoom">
+        <div class="contenedorImg" data-aos="flip-up" data-aos-delay="50" data-aos-duration="1000">
           <p class="headJoya">Joya 8</p>
           <img src="../assets/img/joya8.jpg" alt="joya8" class="joyaOcho"/>
           <p class="descpImg">$1500</p>
         </div>
-        <div class="contenedorImg animacionZoom">
+        <div class="contenedorImg" data-aos="fade-down-left" data-aos-delay="50" data-aos-duration="1000">
           <p class="headJoya">Joya 9</p>
           <img src="../assets/img/joya9.jpg" alt="joya9" class="joyaNueve"/>
           <p class="descpImg">$3500</p>
@@ -187,5 +189,11 @@
     <!-- Footer -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+       AOS.init({
+         duration:1200,
+       });
+    </script>
   </body>
 </html>

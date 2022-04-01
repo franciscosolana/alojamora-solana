@@ -1,21 +1,21 @@
-.logo{
-        width: 150px;
-        height: auto;
+.logo {
+  width: 150px;
+  height: auto;
 }
 .barra {
-        display: flex;
-        border-bottom: solid black 1px;
+  display: flex;
+  border-bottom: solid black 1px;
 }
 .barraNav {
-        margin-left: auto;
-        align-self: center;
+  margin-left: auto;
+  align-self: center;
 }
 .navItem {
-        display: inline-block;
+  display: inline-block;
 }
 .navLink {
-        background-color: black;
-        color: white;
-        text-decoration: none;
-        font-size: 23px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 23px;
 }

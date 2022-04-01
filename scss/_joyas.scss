@@ -1,30 +1,28 @@
 .imgJoya {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 .contenedorImg {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-x: hidden;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .descpImg {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .headJoya {
-    background-color: black;
-    margin-top: 10%;
-    font-size: 30px;
-    color: white;
+  background-color: black;
+  margin-top: 10%;
+  font-size: 30px;
+  color: white;
 }
-  
 
 @mixin posicionJoya($gridarea) {
   grid-area: $gridarea;
@@ -37,40 +35,40 @@
   padding-left: 3%;
 }
 
-.joyaUno{
+.joyaUno {
   @include tamañoJoya();
   @include posicionJoya(1/1/2 / 2);
 }
-.joyaDos{
+.joyaDos {
   @include tamañoJoya();
   @include posicionJoya(1 / 2 / 2 / 3);
 }
-.joyaTres{
+.joyaTres {
   @include tamañoJoya();
   @include posicionJoya(1 / 3 / 2 / 4);
 }
-.joyaCuatro{
+.joyaCuatro {
   @include tamañoJoya();
   @include posicionJoya(2 / 1 / 3 / 2);
 }
-.joyaCinco{
+.joyaCinco {
   @include tamañoJoya();
   @include posicionJoya(2 / 2 / 3 / 3);
 }
-.joyaSeis{
+.joyaSeis {
   @include tamañoJoya();
   @include posicionJoya(2 / 3 / 3 / 4);
 }
 
-.joyaSiete{
+.joyaSiete {
   @include tamañoJoya();
   @include posicionJoya(3 / 1 / 4 / 2);
 }
-.joyaOcho{
+.joyaOcho {
   @include tamañoJoya();
   @include posicionJoya(3 / 2 / 4 / 3);
 }
-.joyaNueve{
+.joyaNueve {
   @include tamañoJoya();
   @include posicionJoya(3 / 3 / 4 / 4);
 }

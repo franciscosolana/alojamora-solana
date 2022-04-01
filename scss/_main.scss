@@ -1,48 +1,49 @@
 .mainH1 {
-      font-size: 50px;
-      text-align: center;
-      font-weight: bold;
-      border: 1px solid black;
-}
- 
-.mainH2 {
-      font-size: 30px;
-      text-align: center;
-      font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid black;
 }
 
-.mainH3{
+.mainH2 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.mainH3 {
   font-size: 50px;
   text-align: center;
 }
- 
-.mainH5{
+
+.mainH5 {
   font-size: 25px;
 }
 
-.carrouselHeight{
+.carrouselHeight {
   padding-top: 1%;
-    height: calc(100vh - 80px);
-    object-fit: cover;
+  height: calc(100vh - 80px);
+  object-fit: cover;
 }
 
-.secIndex{
+.secIndex {
   font-size: 20px;
 }
+ol li {
+  padding-top: 1%;
+}
 
-.imgMedidas{
+.imgMedidas {
   width: 45%;
   margin-left: 25%;
 }
 
-.boton{
+.boton {
   font-size: 30px;
   border: 1px solid white;
-  background-color: #007bff;
+  background-color: black;
   color: white;
 }
-
-
-.divPreguntas {
-      padding-top: 1%;
-} 
+.accordion-button {
+  font-weight: bold;
+}

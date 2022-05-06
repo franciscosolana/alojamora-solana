@@ -23,4 +23,3 @@ if(medida<14.66){
 }else{
     calcularMedida(medida);
 }
-

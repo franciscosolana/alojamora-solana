@@ -35,7 +35,7 @@ const getCard = (item) => {
                 <h5 class="card-title">${item.nombre}</h5>
                 <p class="card-text">$${item.precio}</p>
                 <p class="card-text">Stock: ${item.stock}</p>
-                <button onclick=agregarCarrito(${item.id}) class="btn ${item.stock ? 'btn-primary' : 'btn-secondary'}" ${!item.stock ? 'disabled' : '' } >Agregar al carrito</button>
+                <button id="botoncito" onclick=agregarCarrito(${item.id}) class="btn ${item.stock ? 'btn-primary' : 'btn-secondary'}" ${!item.stock ? 'disabled' : '' } >Agregar al carrito</button>
             </div>
         </div>
     `);
@@ -77,10 +77,13 @@ const agregarCarrito = (id) => {
             cantidad: 1,
             imagen: seleccion.imagen,
         })
+        Swal.fire('Agregaste el producto al carrito')
     } else {
         carrito[busqueda].cantidad = carrito[busqueda].cantidad + 1
     }
+
     cargarProductos(carrito, tablaCarrito, true);
 }
 
 cargarProductos(PRODUCTOS, contenedor, false);
+
